@@ -9,6 +9,8 @@ import { Item } from './item';
 export class AppComponent {
   title = 'todo';
 
+
+
   //ToDo: eliminar esta lista al momento de integrar la API//
   filter: "all" | "active" | "done" = "all"
 
@@ -38,8 +40,11 @@ export class AppComponent {
     })
   }
 
-  removeItem(item:Item){
-    this.allItems.splice(this.allItems.indexOf(item),1)
+  remove(item: Item) {
+    this.allItems.splice(this.allItems.indexOf(item), 1);
   }
+
+
+
 
 }
